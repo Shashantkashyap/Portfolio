@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container w-10/12 mx-auto">
+        <!--Navbar-->
+        <div class="w-full navbar flex justify-between pt-[1rem] items-center">
+          <div class="logo-container flex items-end gap-1">
+            <img
+              src="https://m.media-amazon.com/images/I/71wy7QCQxVL._AC_UF894,1000_QL80_.jpg"
+              alt="logo"
+              class="logo lg:w-[40px] md:w-[40px] max-md:w-[30px]"
+            />
+            <div class="logo-text lg:text-3xl max-md:text-xl">hashant</div>
+          </div>
+
+          <div>
+            <div class="lg:hidden md:hidden sm: block relative">
+              <i
+                class="fa-solid fa-bars text-[20px] hover:text-blue-500"
+                id="bar-icon"
+              ></i>
+              <div
+                class="small-nav-items flex gap-[2rem] pl-1 pr-1 top-[40px] absolute right-0 opacity-0 pointer-events-none bg-gray-300 p-4 px-2 rounded-md"
+                id="small-nav-items"
+              >
+                <div class="text-[18px] cursor-pointer font-medium ml-2">
+                  <a href="#projects"></a>Projects
+                </div>
+                <div class="text-[18px] cursor-pointer font-medium">
+                  <a href="#skills"></a>Skills
+                </div>
+                <div class="text-[18px] cursor-pointer font-medium mr-2">
+                  <a href="#contactme"></a>Contact
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="nav-items flex gap-[4rem] pl-[4rem] pr-[4rem] max-md:hidden"
+            >
+              <div
+                class="text-[20px] cursor-pointer font-medium hover:font-bold duration-[0.8s]"
+              >
+                <a href="#projects">Projects</a>
+              </div>
+              <div
+                class="text-[20px] cursor-pointer font-medium hover:font-bold duration-[0.8s]"
+              >
+                <a href="#skills">Skills</a>
+              </div>
+              <div
+                class="text-[20px] cursor-pointer font-medium hover:font-bold duration-[0.8s]"
+              >
+                <a href="#contactme">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Hero Section-->
+        <div
+          class="hero-section flex lg:flex-row md:flex-row max-md:flex-col sm:flex-col justify-center lg:gap-[5rem] max-md:gap-2 mx-auto my-[4rem] px-[1rem] pb-[8rem] relative"
+        >
+          <div
+            class="faded-text absolute lg:text-[7em] max-md:text-[4em] max-md:bottom-[-11.3%]"
+          >
+            Shashant
+          </div>
+          <!--left-->
+          <div
+            class="hero-left flex flex-col justify-center lg:gap-[2rem] lg:w-[70%] max-md:w-full max-md:mt-3"
+          >
+            <p
+              class="lg:text-[35px] max-md:text-[25px] text-[#343d68] font-medium"
+            >
+              Hi! Shashant
+            </p>
+            <p
+              class="hero-sub-heading max-md:text-[25px] lg:text-[45px] leading-[45px] text-[#343d68] font-medium"
+            >
+              I am a <span class="role text-[#4e45d5] font-bold"></span>
+            </p>
+            <p class="mt-[1rem] w-[50%] max-md:w-[100%] font-medium">
+              I am a software developer and here is my portfolio website. Here
+              you'll learn about my journey as a software developer.
+            </p>
+            <!-- HTML !-->
+            <button
+              class="button-48 rounded-md shadow-md max-md:mt-5 max-md:mb-10 lg:w-[50%]"
+              role="button"
+            >
+              <span class="text font-semibold">Hire Me</span>
+            </button>
+          </div>
+
+          <!--right-->
+          <div class="hero-right">
+            <div class="user-image">
+              <img
+                src="./images/profile.jpg"
+                alt=""
+                class="w-[300px] max-md:mt-5"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Project-->
+      <div class="project-Section bg-[#E7E7E7] mt-[4rem]" id="projects">
+        <p
+          class="text-[#e84949] lg:text-[90px] max-md:text-[60px] text-center pt-30px"
+        >
+          Projects
+        </p>
+
+        <div
+          class="project-container max-w-[1200px] mx-auto py-[3rem] flex flex-col gap-[120px]"
+        >
+          <div
+            class="project-card w-[90%] max-md:w-[95%] max-md:mx-auto max-md:h-[300px] lg:h-[550px]"
+            id="project1"
+          >
+            <div
+              class="project-number absolute font-semibold text-white z-10 lg:text-[200px] max-md:text-[70px] max-md:right-[-10px] right-[-50px] lg:top-[-60px] hidden"
+            >
+              01
+            </div>
+            <div
+              class="project-content absolute flex flex-col text-white lg:p-[2em] max-md:p-2 max-md:bottom-[3%] max-md:gap-1 lg:bottom-[10%] z-50 lg:gap-[1em] transition-all duration-[0.4s] left-[10%]"
+            >
+              <div
+                class="project-skills-container lg:w-[60%] max-md:w-[90%] max-md:gap-[3px] flex lg:gap-[10px] flex-wrap"
+              >
+                <img
+                  src="./images/html.webp"
+                  class="project-skill rounded-full max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/Css2.webp"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/javascript.webp"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/express.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/react.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/tailwind.png"
+                  class="project-skill rounded-full max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/node.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/mongo.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/redux.png"
+                  class="project-skill rounded-full max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+              </div>
+              <p
+                class="project-heading lg:text-[50px] max-md:text-[30px] font-bold leading-[3rem]"
+              >
+                Music App
+              </p>
+              <div
+                class="lg:w-[70%] max-md:w-[90%] lg:text-[16px] max-md:text-sm italic"
+              >
+                <p class="project-subHeading">🎁 A Musical Gift for Mom! 🎶</p>
+                <p>
+                  🎉 Thrilled to announce a special project close to my heart –
+                  a musical app tailored just for Mom, featuring all her
+                  favorite songs in one place!
+                </p>
+              </div>
+              <div class="flex gap-[0.9rem] items-center">
+                <a
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:7167876770854060032/"
+                  class="lg:w-[20%] max-md:mt-1 max-md:mb-3 max-md:p-1"
+                >
+                  <button class="button-48 rounded-md shadow-md" role="button">
+                    <span class="font-semibold">Learn More</span>
+                  </button>
+                </a>
+                <a href="https://github.com/Shashantkashyap/Music_App">
+                  <i
+                    class="fa-brands fa-github cursor-pointer lg:text-[35px] max-md:text-[20px] hover:bg-red-600 rounded-full transition-all duration-[.4s]"
+                  ></i>
+                </a>
+                <a href="https://music-app-frontend-addb.onrender.com/">
+                  <i
+                    class="fa-solid fa-link cursor-pointer lg:text-[35px] max-md:text-[20px] hover:bg-red-600 rounded-full transition-all duration-[.4s]"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-card w-[90%] max-md:w-[95%] mx-auto lg:h-[550px] max-md:h-[300px] lg:ml-[120px] max-md:ml-2"
+            id="project2"
+          >
+            <div
+              class="project-number absolute font-semibold text-white z-10 text-[200px] max-md:text-[70px] max-md:left-[-5px] max-md:top-[-40px] left-[-60px] top-[-60px] hidden"
+            >
+              02
+            </div>
+            <div
+              class="project-content absolute flex flex-col text-white p-[2em] max-md:p-2 bottom-[10%] max-md:bottom-[3%] z-50 gap-[1em] max-md:gap-1 transition-all duration-[0.4s] right-[-10%]"
+            >
+              <div
+                class="project-skills-container w-[60%] max-md:w-[90%] flex gap-[10px] max-md:gap-[3px] flex-wrap"
+              >
+                <img
+                  src="./images/html.webp"
+                  class="project-skill rounded-full max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/Css2.webp"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/javascript.webp"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/express.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/react.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/tailwind.png"
+                  class="project-skill rounded-full max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/node.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/mongo.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/redux.png"
+                  class="project-skill rounded-full max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+              </div>
+              <p
+                class="project-heading text-[50px] max-md:text-[30px] font-bold leading-[3rem]"
+              >
+                Resume
+              </p>
+              <div
+                class="w-[70%] max-md:w-[90%] text-[16px] max-md:text-sm italic"
+              >
+                <p class="project-subHeading">
+                  I developed a MERN-based resume maker app featuring predefined
+                  templates, various functionalities,
+                </p>
+                <p>
+                  and a sleek user interface for effortless resume creation and
+                  customization
+                </p>
+              </div>
+              <div class="flex gap-[.9rem] items-center">
+                <a
+                  href="https://drive.google.com/file/d/11edo0qtrtvFSECsNaFV7k0EBNhfEwYrU/view?usp=sharing"
+                  class="lg:w-[20%]"
+                >
+                  <button
+                    class="button-48 rounded-md shadow-md max-md:mt-1 max-md:mb-3 max-md:p-1"
+                    role="button"
+                  >
+                    <span class="text font-semibold">Learn More</span>
+                  </button>
+                </a>
+                <a href="https://github.com/Shashantkashyap/Resume">
+                  <i
+                    class="fa-brands fa-github cursor-pointer lg:text-[35px] max-md:text-[20px] hover:bg-red-600 rounded-full transition-all duration-[.4s]"
+                  ></i>
+                </a>
+                <a
+                  href="https://resume-4o0qepgo4-shashants-projects.vercel.app"
+                >
+                  <i
+                    class="fa-solid fa-link cursor-pointer lg:text-[35px] max-md:text-[20px] hover:bg-red-600 rounded-full transition-all duration-[.4s]"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-card w-[90%] max-md:w-[95%] max-md:mx-auto lg:h-[550px] max-md:h-[300px]"
+            id="project3"
+          >
+            <div
+              class="project-number absolute font-semibold text-white z-10 text-[200px] max-md:text-[70px] max-md:right-[-10px] max-md:top-[-30px] right-[-50px] top-[-60px] hidden"
+            >
+              03
+            </div>
+            <div
+              class="project-content absolute flex flex-col text-white p-[2em] bottom-[10%] max-md:p-2 max-md:bottom-[3%] max-md:gap-1 z-50 gap-[1em] transition-all duration-[0.4s] left-[10%]"
+            >
+              <div
+                class="project-skills-container w-[60%] max-md:w-[90%] max-md:gap-[3px] flex gap-[10px] flex-wrap"
+              >
+                <img
+                  src="./images/html.webp"
+                  class="project-skill rounded-full max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/Css2.webp"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/javascript.webp"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/express.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/react.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/tailwind.png"
+                  class="project-skill rounded-full max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/node.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/mongo.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/redux.png"
+                  class="project-skill rounded-full max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+              </div>
+              <p
+                class="project-heading text-[50px] max-md:text-[30px] font-bold leading-[3rem]"
+              >
+                Khana
+              </p>
+              <div
+                class="w-[70%] max-md:w-[90%] max-md:text-sm text-[16px] italic"
+              >
+                <p class="project-subHeading">KHANA - food delivery app 🎉🍕</p>
+                <p>
+                  Built on the powerful MERN full stack with a sprinkle of JWT
+                  magic, KHANA is not just an app; it's a culinary adventure
+                  waiting to happen!
+                </p>
+              </div>
+              <div class="flex gap-[0.9rem] items-center">
+                <a
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:7146020381689110528/"
+                  class="lg:w-[20%]"
+                >
+                  <button
+                    class="button-48 rounded-md shadow-md max-md:mt-1 max-md:mb-3 max-md:p-1"
+                    role="button"
+                  >
+                    <span class="text font-semibold">Learn More</span>
+                  </button>
+                </a>
+                <a href="https://github.com/Shashantkashyap/KHANA">
+                  <i
+                    class="fa-brands fa-github cursor-pointer lg:text-[35px] max-md:text-[20px] hover:bg-red-600 rounded-full transition-all duration-[.4s]"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-card w-[90%] max-md:w-[95%] max-md:mx-auto lg:h-[550px] max-md:h-[300px] lg:ml-[120px] max-md:ml-2"
+            id="project4"
+          >
+            <div
+              class="project-number absolute font-semibold text-white z-10 text-[200px] max-md:text-[70px] max-md:left-[-5px] max-md:top-[-40px] left-[-60px] top-[-60px] hidden"
+            >
+              04
+            </div>
+            <div
+              class="project-content absolute flex flex-col text-white p-[2em] max-md:p-2 max-md:bottom-[3%] max-md:gap-1 bottom-[10%] z-50 gap-[1em] transition-all duration-[0.4s] right-[-10%]"
+            >
+              <div
+                class="project-skills-container w-[60%] max-md:w-[90%] max-md:gap-[3px] flex gap-[10px] flex-wrap"
+              >
+                <img
+                  src="./images/html.webp"
+                  class="project-skill rounded-full max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/Css2.webp"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/javascript.webp"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/express.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/react.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/tailwind.png"
+                  class="project-skill rounded-full max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/node.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/mongo.png"
+                  class="project-skill max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+                <img
+                  src="./images/redux.png"
+                  class="project-skill rounded-full max-md:w-[20px] max-md:h-[20px]"
+                  alt=""
+                />
+              </div>
+              <p
+                class="project-heading text-[50px] max-md:text-[30px] font-bold leading-[3rem]"
+              >
+                Amazon-Clone
+              </p>
+              <div
+                class="w-[70%] max-md:w-[90%] max-md:text-sm text-[16px] italic"
+              >
+                <p class="project-subHeading">
+                  I developed a MERN-based resume maker app featuring predefined
+                  templates, various functionalities,
+                </p>
+                <p>
+                  various functionalities, and a sleek user interface for
+                  effortless resume creation and customization
+                </p>
+              </div>
+              <div class="flex gap-[.9rem] items-center">
+                <a
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:7143242216151457793/"
+                  class="lg:w-[20%]"
+                >
+                  <button
+                    class="button-48 rounded-md shadow-md max-md:mt-1 max-md:mb-3 max-md:p-1"
+                    role="button"
+                  >
+                    <span class="text font-semibold">Learn More</span>
+                  </button>
+                </a>
+                <a href="https://github.com/Shashantkashyap/e-commerce">
+                  <i
+                    class="fa-brands fa-github cursor-pointer lg:text-[35px] max-md:text-[20px] hover:bg-red-600 rounded-full transition-all duration-[.4s]"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Skill Section-->
+      <div
+        class="skills-container lg:w-10/12 max-md:w-[95%] mx-auto relative flex lg:flex-row max-md:flex-col lg:p-[5rem] max-md:p-2 my-[10rem] mx-auto gap-[50px]"
+        id="skills"
+      >
+        <div
+          class="skill-fade-text absolute lg:text-[15em] max-md:text-[5em] text-[#e7e7e7] max-md:bottom-[-13%] bottom-[-30.5%] right-[-10%] max-md:right-[-1%] select-none"
+        >
+          Skills
+        </div>
+
+        <div
+          class="skill-container-left lg:w-[50%] flex flex-col max-md:w-full"
+        >
+          <p
+            class="lg:text-[50px] max-md:text-[30px] font-bold text-[#e84949] leading-[50px]"
+          >
+            <span class="lg:text-[90px] max-md:text-[50px]">M</span>e and <br />
+            MyTech Stack
+          </p>
+          <div class="skill-subHeading mt-[1rem] w-[85%] text-justify">
+            <p class="my-[15px] max-md:text-sm">
+              I hold a Bachelor's degree in Electronics and Communication
+              Engineering from Guru Gobind Singh Indraprastha University,
+              achieving a CGPA of 8.3. During my undergraduate studies, I
+              undertook two internships, one focusing on Internet of Things and
+              the other on microcontrollers.
+            </p>
+            <p class="my-[15px] max-md:text-sm">
+              I am Shashant, a dedicated Full Stack Developer immersed in the
+              realm of web development for the past year. My journey involves
+              continuous learning and hands-on practice, particularly in the
+              dynamic MERN stack. Crafting visually appealing user interfaces
+              coupled with robust backend solutions defines my expertise.
+            </p>
+            <p class="my-[15px] max-md:text-sm">
+              My portfolio boasts diverse projects spanning various domains,
+              including Food Delivery, Music Streaming, E-commerce, and numerous
+              JavaScript-based ventures. I approach each endeavor with an
+              unwavering enthusiasm to master emerging technologies and tackle
+              technical intricacies head-on. Let's embark on this journey of
+              innovation together.
+            </p>
+          </div>
+        </div>
+        <div
+          class="skill-container-right lg:w-[40%] max-md:w-full flex flex-row flex-wrap relative gap-[3rem] justify-center"
+        >
+          <img src="./images/blob vector.png" class="blob-style" alt="" />
+
+          <div class="flex flex-wrap gap-[2rem] justify-center z-10">
+            <img
+              src="./images/html.webp"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+            <img
+              src="./images/Css2.webp"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+            <img
+              src="./images/javascript.webp"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+
+            <img
+              src="./images/bootstrap.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+            <img
+              src="./images/redux.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+
+            <img
+              src="./images//express.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+            <img
+              src="./images/git.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+            <img
+              src="./images/github.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+
+            <img
+              src="./images/MUI.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+            <img
+              src="./images/next.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+            <img
+              src="./images/node.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+            <img
+              src="./images/python.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+
+            <img
+              src="./images/tailwind.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px] rounded-full"
+              alt=""
+            />
+            <img
+              src="./images/vercel.svg"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+            <img
+              src="./images/jwt.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+            <img
+              src="./images/react.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+            <img
+              src="./images/mongo.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+            <img
+              src="./images/dbms.png"
+              class="skills-logo max-md:w-[50px] max-md:h-[50px]"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--Contact Section-->
+      <div class="contactus-form-container w-full bg-[#E7E7E7]" id="contactme">
+        <div class="container w-10/12 mx-auto">
+          <p
+            class="text-[5em] max-md:text-[40px] max-md:font-bold text-[#e84949] pt-[2rem]"
+          >
+            Contact Me
+          </p>
+          <p
+            class="text-[3em] max-md:text-[20px] max-md:mt-3 text-[#343d68aa] capitalize"
+          >
+            Questions, Thoughts, or just want to say Hello...
+          </p>
+          <div class="contctus-form mt-[25px] flex items-center justify-center">
+            <form
+              action=""
+              class="w-[70%] max-md:w-[90%] my-[2rem] mx-[5rem] max-md:mx-2"
+            >
+              <div class="formfield-container flex flex-col gap-[30px] w-full">
+                <input
+                  type="text"
+                  class="formfield"
+                  name="name"
+                  id=""
+                  placeholder="Enter your name"
+                />
+                <input
+                  type="email"
+                  class="formfield"
+                  name="email"
+                  id=""
+                  placeholder="Enter your email"
+                />
+                <input
+                  type="text"
+                  class="formfield"
+                  name="subject"
+                  id=""
+                  placeholder="Enter your subject"
+                />
+
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="5"
+                  class="formfield formfield-textarea h-auto pt-[1rem]"
+                  placeholder="Enter your message"
+                ></textarea>
+                <div class="submit-btn">
+                  <button
+                    class="button-48 rounded-md shadow-md max-md:mt-1 max-md:mx-3 max-md:mb-3 max-md:p-2 lg:w-[40%]"
+                    role="button"
+                  >
+                    <span class="font-semibold text-[1rem]"
+                      >Send Message
+                      <i class="fa-solid fa-paper-plane ml-5 text-[1.1rem]"></i
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--resume-->
+      <div
+        class="flex justify-center items-center font-bold text-lg max-md:text-sm max-md:p-1 max-md:py-5 p-5 cursor-pointer"
+      >
+        <a
+          href="https://drive.google.com/file/d/1nyF3APdI_DsjKngaw-Lyo-9t7kqgRoTJ/view?usp=sharing"
+          ><span class="text-blue-500">Click Here </span></a
+        >
+        : to visit my resume
+      </div>
+
+      <!--Footer-->
+      <div class="footer relative mt-[-1px] bg-[#343d68] p-[5rem] max-md:p-1">
+        <div class="conatainer w-10/12 mx-auto">
+          <div
+            class="footer-wrapper flex lg:flex-row max-sm:flex-col gap-[1rem] lg:p-[2.2rem] max-md:py-[4rem] justify-between items-center"
+          >
+            <div
+              class="footer-faded-text absolute left-0 bottom-0 text-[#535c87] text-[5em] max-md:text-[40px] select-none"
+            >
+              Shashant
+            </div>
+            <div class="link">
+              <div class="flex gap-[1.2rem] text-[20px] max-md:text-[20px]">
+                <a href="#projects" class="text-white">Projects</a>
+                <a href="#skills" class="text-white">Skills</a>
+                <a href="#contactme" class="text-white">Contact Me</a>
+              </div>
+            </div>
+
+            <div
+              class="icon-wrapper flex gap-4 text-[30px] max-md:text-[20px] text-white"
+            >
+              <a href="https://www.linkedin.com/in/shashant-kashyap-b812a0155/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Shashantkashyap"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/kashyapshashant/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
